@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram bot python script to check public IP
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/TelegramBot/RPi_check_public_ip/getIP.py
+WorkingDirectory=/opt/TelegramBot/RPi_check_public_ip
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=carlos
+
+[Install]
+WantedBy=multi-user.target
+
