@@ -3,7 +3,7 @@ Use a Telegram bot to easily check the current public IP of your Raspberry Pi (o
 
 ## To execute the script on boot
 
-Copy telegram-bot.service to the /etc/systemd/system/ directory:
+Copy telegram-bot.service to the /etc/systemd/system/ directory
 
 Reload the systemd manager configuration:
 
@@ -11,8 +11,8 @@ Reload the systemd manager configuration:
 
 Enable the service to run at boot:
 
-`sudo systemctl enable myscript.service`
+`sudo systemctl enable telegram-bot.service`
 
 Start the service:
 
-`sudo systemctl start myscript.service'`
+`sudo systemctl start telegram-bot.service'`
